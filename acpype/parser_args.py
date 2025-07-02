@@ -38,7 +38,7 @@ def get_option_parser():
     parser.add_argument(
         "-c",
         "--charge_method",
-        choices=["gas", "bcc", "user"],
+        choices=["gas", "bcc", "user", "ABCG2"],
         action="store",
         default="bcc",
         dest="charge_method",
