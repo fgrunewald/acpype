@@ -2205,7 +2205,7 @@ class AbstractTopol(abc.ABC):
                 " %-8s %-11s %3.5f  %3.5f   A   %13.5e %13.5e"
                 % (
                     aTypeName,
-                    aTypeName,
+                    0.0,
                     0.0,
                     0.0,
                     sigma,
