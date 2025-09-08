@@ -1,3 +1,4 @@
+import pysmiles
 import abc
 import array
 import math
@@ -2201,11 +2202,12 @@ class AbstractTopol(abc.ABC):
             # OW 629362.166 625.267765 spce
             # OW 581935.564 594.825035 tip3p
             #       print aTypeName, A, B
+            ele = aTypeName[0].upper()
             line = (
                 " %-8s %-11s %3.5f  %3.5f   A   %13.5e %13.5e"
                 % (
                     aTypeName,
-                    0.0,
+                    pysmiles.PTE[ele]['AtomicNumber'],
                     0.0,
                     0.0,
                     sigma,
